@@ -1,0 +1,12 @@
+service: todoserverless
+
+plugins:
+  - serverless-esbuild
+  - serverless-offline
+
+provider:
+  name: aws
+
+functions:
+  hello:
+    handler: src/functions/hello.handle
